@@ -1,20 +1,11 @@
 # HackPad
 
-A 3×3 macro keypad built for [Hack Club's Hackpad grant programme (Blueprint)](https://hackclub.com/hackpad/). Features Cherry MX mechanical switches, per-key SK6812 RGB LEDs, a rotary encoder, and an OLED status display — all driven by a Seeed XIAO RP2040.
+My Hackapd is a 3×3 macro keypad, which can be coded to address all needs. It runs on a Seeed XIAO RP2040, and features Cherry MX mechanical switches, SK6812 RGB LEDs, a rotary encoder, and an OLED status display.
 
----
 
-## Features
+## Why I built this
 
-- **3×3 mechanical key matrix** — Cherry MX PCB-mount switches with 1N4148 anti-ghosting diodes
-- **9× SK6812 MINI-E** reverse-mount RGB LEDs, individually addressable (NeoPixel-compatible)
-- **EC11 rotary encoder** — volume control on layer 0, hue control on layer 1
-- **0.91″ SSD1306 OLED** — shows "HackPad" and the active layer name
-- **Seeed XIAO RP2040** MCU — USB-C, 264 KB RAM, 2 MB Flash
-- **KMK firmware** (CircuitPython) — 2 layers, encoder support, RGB animations
-- **Custom 3D-printed case** — 2-part snap/screw design, M3 heat-set inserts
-
----
+I wanted to have a custom keypad on my desk and use shortcuts assigned to each key.
 
 ## Pin Assignments
 
@@ -34,23 +25,6 @@ A 3×3 macro keypad built for [Hack Club's Hackpad grant programme (Blueprint)](
 
 ---
 
-## Key Map
-
-### Layer 0 — Media
-| Prev Track | Play/Pause | Next Track |
-|:-----------:|:----------:|:----------:|
-| Vol Down   | Mute        | Vol Up     |
-| Copy       | Paste       | **Hold → Layer 1** |
-
-Encoder: rotate = Volume Down / Up
-
-### Layer 1 — RGB Control
-| Hue −  | Hue +  | Sat −  |
-|:-------:|:------:|:------:|
-| Sat +  | Brt −  | Brt +  |
-| Anim   | RGB Toggle | *(held)* |
-
-Encoder: rotate = Hue − / +
 
 ---
 
@@ -73,43 +47,28 @@ All parts sourced from the Hackpad Kit.
 
 ---
 
-## Project Layout
+## Files Layout
 
 ```
 PCB/
-  hackpad.kicad_pro     KiCad project
-  hackpad.kicad_sch     Schematic
-  hackpad.kicad_pcb     PCB layout (80×70 mm, 2-layer)
+  hackpad.kicad_pro     
+  hackpad.kicad_sch
+  hackpad.kicad_prl
+  hackpad.kicad_pcb
+  gerbers.zip    
 CAD/
-  hackpad_assembly.step Full case + PCB assembly
+  Hackpad Keyboard Outline.step
+  Hackpad PCB.step
+  Hackpad case BOTTOM.step
+  Hackpad case TOP.step
+  Hackpad case FULL.step
 Firmware/
-  main.py               KMK CircuitPython firmware
-production/
-  gerbers.zip           Gerber + drill files for fab
-  Top.step              Top plate for 3D printing
-  Bottom.step           Bottom tray for 3D printing
-  main.py               Firmware (copy for flashing)
+  main.py               
 images/
-  (screenshots go here)
+  (screenshots)
+BOM.csv
 README.md
 ```
-
----
-
-## Photos / Renders
-
-![Schematic](images/schematic.png)
-![PCB](images/pcb.png)
-![Case](images/case.png)
-
----
-
-## Firmware — Quick Start
-
-1. Install [CircuitPython 9.x](https://circuitpython.org/board/seeeduino_xiao_rp2040/) on the XIAO RP2040.
-2. Install [KMK](https://github.com/KMKfw/kmk_firmware) — copy the `kmk/` folder to `CIRCUITPY/`.
-3. Copy `production/main.py` to `CIRCUITPY/code.py`.
-4. The keyboard will enumerate immediately over USB.
 
 ---
 
@@ -119,7 +78,6 @@ README.md
 - Min trace width: 0.2 mm (signal), 0.5 mm (power)
 - Min via: 0.8 mm drill, 0.4 mm annular ring
 - Surface finish: HASL or ENIG
-- Send `production/gerbers.zip` to your preferred fab (JLCPCB, PCBWay, etc.)
 
 ---
 
@@ -132,4 +90,4 @@ README.md
 
 ---
 
-*Built with ❤️ for Hack Club Blueprint*
+*Built with ❤️ by Arseniy*
