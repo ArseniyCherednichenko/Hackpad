@@ -1,4 +1,4 @@
-# HackPad
+# Arseniy's HackPad
 
 My Hackpad is a 3×3 macro keypad, which can be programmed to address all needs. It runs on a Seeed XIAO RP2040, and features Cherry MX mechanical switches, SK6812 RGB LEDs, a rotary encoder, and an OLED status display.
 
@@ -7,11 +7,10 @@ My Hackpad is a 3×3 macro keypad, which can be programmed to address all needs.
 
 ## Why I built this
 
-I wanted to have a custom keypad on my desk and use shortcuts assigned to each key.
+I wanted to have a custom keypad on my desk and use shortcuts assigned to each key to simplify and make my workflow more efficient.
 
-
+<!--
 ## Pin Assignments
-
 | Signal       | XIAO Pin | Description                       |
 |-------------|----------|-----------------------------------|
 | ROW0        | D0       | Switch matrix row 0               |
@@ -27,6 +26,8 @@ I wanted to have a custom keypad on my desk and use shortcuts assigned to each k
 | LED_DATA    | D10      | SK6812 data chain                 |
 
 ---
+
+-->
 ## Schematic
 
 <img width="1301" height="716" alt="Screenshot 2026-03-29 at 21 07 59" src="https://github.com/user-attachments/assets/ade425b4-9886-4544-840a-28b575bb7545" />
@@ -36,26 +37,6 @@ I wanted to have a custom keypad on my desk and use shortcuts assigned to each k
 ## PCB 
 
 <img width="799" height="899" alt="Screenshot 2026-03-29 at 21 07 40" src="https://github.com/user-attachments/assets/216a88c9-6adb-4d03-a82a-bada28acb502" />
-
----
-
-
-## Bill of Materials
-
-All parts sourced from the Hackpad Kit.
-
-| Qty | Reference       | Part                             | Package / Notes               |
-|----:|-----------------|----------------------------------|-------------------------------|
-|  1  | U1              | Seeed XIAO RP2040                | Castellated module            |
-|  9  | SW1–SW9         | Cherry MX PCB-mount switch       | 3-pin PCB mount               |
-|  9  | D1–D9           | 1N4148 diode                     | SOD-123 SMD                   |
-|  9  | LED1–LED9       | SK6812 MINI-E                    | 3.5×3.5 mm, reverse-mount     |
-|  1  | ENC1            | EC11 rotary encoder with shaft   | Vertical, 20 mm shaft         |
-|  1  | J1              | 4-pin 2.54 mm header             | OLED connector (GND/VCC/SCL/SDA) |
-|  1  | OLED1           | 0.91″ SSD1306 OLED module        | 128×32, I²C, 4-pin GND-VCC-SCL-SDA |
-|  1  | C1              | 100 nF ceramic capacitor         | 0805 SMD — LED decoupling     |
-|  4  | —               | M3×8 socket-head screws          | Case assembly                 |
-|  4  | —               | M3 heat-set inserts              | For bottom tray bosses        |
 
 ---
 
@@ -95,13 +76,15 @@ README.md
 
 ## Case Printing Notes
 
-- Print `Top.step` and `Bottom.step` in PLA or PETG, 0.2 mm layer height, 3–4 perimeters.
+- Print `Hackpad case TOP.step`, `Hackpad case BOTTOM.step` and `Hackpad Keyboard Outline.step` in PLA or PETG, 0.2 mm layer height, 3–4 perimeters.
 - Insert M3 heat-set inserts into the four corner bosses of the bottom tray using a soldering iron.
 - PCB sits on the 2 mm standoffs inside the tray.
 - Top plate secures with 4× M3×8 screws through the corner holes.
   
 ---
+
 ## Bill of Materials
+
 
 | # | Component | Qty | Package | Supplier | Link | Price (€) |
 |---|-----------|-----|---------|----------|------|-----------|
