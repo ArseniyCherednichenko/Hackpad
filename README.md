@@ -9,6 +9,7 @@ My Hackpad is a 3×3 macro keypad, which can be programmed to address all needs.
 
 I wanted to have a custom keypad on my desk and use shortcuts assigned to each key to simplify and make my workflow more efficient.
 
+---
 <!--
 ## Pin Assignments
 | Signal       | XIAO Pin | Description                       |
@@ -28,6 +29,10 @@ I wanted to have a custom keypad on my desk and use shortcuts assigned to each k
 ---
 
 -->
+## Usage
+
+To use Hackpad, order the PCB using `gerbers.zip` from JLCPCB, print the 3D enclosure, solder the components, install firmware and assemble everything. Edit `main.py` to customise your keymap.
+
 ## Schematic
 
 <img width="1301" height="716" alt="Screenshot 2026-03-29 at 21 07 59" src="https://github.com/user-attachments/assets/ade425b4-9886-4544-840a-28b575bb7545" />
