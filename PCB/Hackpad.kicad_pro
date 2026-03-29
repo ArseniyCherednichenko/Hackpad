@@ -657,7 +657,7 @@
       {
         "filename": "Hackpad.kicad_sch",
         "name": "Hackpad",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "74c3bebc-970b-4a9d-a1ad-f0efb7e53b73"
       }
     ],
     "used_designators": "",
@@ -666,7 +666,7 @@
   "sheets": [
     [
       "74c3bebc-970b-4a9d-a1ad-f0efb7e53b73",
-      "Root"
+      "Hackpad"
     ]
   ],
   "text_variables": {},
