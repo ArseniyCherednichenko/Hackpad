@@ -1,6 +1,6 @@
 # HackPad
 
-My Hackapd is a 3×3 macro keypad, which can be programmed to address all needs. It runs on a Seeed XIAO RP2040, and features Cherry MX mechanical switches, SK6812 RGB LEDs, a rotary encoder, and an OLED status display.
+My Hackpad is a 3×3 macro keypad, which can be programmed to address all needs. It runs on a Seeed XIAO RP2040, and features Cherry MX mechanical switches, SK6812 RGB LEDs, a rotary encoder, and an OLED status display.
 
 <img width="1086" height="828" alt="Screenshot 2026-03-29 at 20 05 30" src="https://github.com/user-attachments/assets/de9cacb0-417e-4028-9833-30e429d9bebb" />
 
